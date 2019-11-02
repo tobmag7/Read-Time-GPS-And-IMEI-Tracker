@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CDTracker</title>
+</head>
+<style>
+
+    input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+
+  button {
+    background-color: darkcyan;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+
+h2 {
+  text-align: center;
+}
+
+header img {
+  height: 34px;
+  margin-left: 40px;
+}
+body {
+  height: 125vh;
+  background-size: cover;
+  font-family: sans-serif;
+  margin-top: 80px;
+  padding: 30px;
+}
+</style>
+
+<body>
+    <h3>IMEI TRACKER</h3>
+    <div class="imei">
+        <label><b>Enter Imei Number</b></label>
+        <input type="text"  name="text" class="form-control" placeholder="Enter Imei Number" required>
+    </div>
+
+    <button class="btn btn-primary" type="submit"> <a href="viewer.html" target="_blank">SUBMIT</a></button>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/js/tracker.js"></script>
+</body>
+</html>
